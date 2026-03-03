@@ -1,0 +1,87 @@
+.community-suggestions-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 35px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.community-suggestions-container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 28px;
+  color: #2980b9;
+  border-bottom: 3px solid #2980b9;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.suggestion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion-item {
+  background-color: #f9faff;
+  border-radius: 10px;
+  padding: 22px 28px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 10px rgba(41, 128, 185, 0.15);
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.suggestion-item:hover {
+  background-color: #e3f0ff;
+}
+
+.suggestion-item h3 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.suggestion-item p {
+  margin: 6px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #444d56;
+}
+
+.suggestion-item p strong {
+  color: #2c3e50;
+}
+
+.suggestion-item p small {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .community-suggestions-container {
+    padding: 20px 15px;
+  }
+  
+  .suggestion-item {
+    padding: 18px 16px;
+  }
+  
+  .community-suggestions-container h2 {
+    font-size: 24px;
+  }
+  
+  .suggestion-item h3 {
+    font-size: 18px;
+  }
+  
+  .suggestion-item p {
+    font-size: 14px;
+  }
+}

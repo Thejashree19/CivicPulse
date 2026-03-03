@@ -1,0 +1,257 @@
+/* ProjectManagement.css */
+
+.project-management-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-management-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.btn-add {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+.btn-add:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #cc0000;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.project-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.project-table th, 
+.project-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.project-table tbody tr:hover {
+  background-color: #f1f9ff;
+  cursor: pointer;
+}
+
+.project-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #28a745;
+  color: white;
+}
+.btn-edit:hover {
+  background-color: #1e7e34;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+.btn-delete:hover {
+  background-color: #b02a37;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+/* Modal Window */
+.modal {
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  position: relative;
+  font-size: 15px;
+  color: #222;
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Form Styles */
+.project-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.project-form input[type="text"],
+.project-form input[type="date"],
+.project-form input[type="number"],
+.project-form select,
+.project-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.project-form textarea {
+  min-height: 80px;
+}
+
+.project-form input:focus,
+.project-form select:focus,
+.project-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px #80bdff;
+}
+
+.form-buttons {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.btn-submit, .btn-cancel {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  min-width: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+}
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+.btn-cancel:hover {
+  background-color: #565e64;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .project-table thead {
+    display: none;
+  }
+
+  .project-table, 
+  .project-table tbody, 
+  .project-table tr, 
+  .project-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .project-table tr {
+    margin-bottom: 18px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .project-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .project-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: capitalize;
+  }
+
+  .btn-edit, .btn-delete {
+    margin: 5px 8px 0 0;
+    width: 48%;
+  }
+
+  .form-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-submit, .btn-cancel {
+    margin: 10px auto;
+    width: 90%;
+  }
+}

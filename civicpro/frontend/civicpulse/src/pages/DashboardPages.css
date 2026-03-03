@@ -1,0 +1,28 @@
+.dashboard-container {
+  padding: 30px;
+}
+
+.dashboard-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.dashboard-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-link {
+  background-color: #2980b9;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-link:hover {
+  background-color: #3498db;
+}

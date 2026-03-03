@@ -1,0 +1,97 @@
+.profile-container {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 30px 35px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.profile-container h2 {
+  text-align: center;
+  color: #2980b9;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  border-bottom: 3px solid #2980b9;
+  padding-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 18px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.password-update {
+  margin-top: 40px;
+}
+
+.password-update h3 {
+  color: #34495e;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 6px;
+}
+
+.password-update form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.password-update input {
+  padding: 12px 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.password-update input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+.password-update button {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.password-update button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.password-update button:hover:not(:disabled) {
+  background-color: #1c5980;
+}
+
+.update-message {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #e74c3c; /* red by default */
+}
+
+.update-message.success {
+  color: #27ae60; /* green for success */
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}

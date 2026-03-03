@@ -1,0 +1,60 @@
+/* src/pages/Register.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+}
+
+.register-card {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.register-card form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.register-card form input:focus {
+  border-color: #4b79a1;
+  outline: none;
+}
+
+.register-card form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4b79a1;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-card form button:hover {
+  background-color: #3a5c77;
+}

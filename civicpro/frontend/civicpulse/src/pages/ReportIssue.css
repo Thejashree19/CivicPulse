@@ -1,0 +1,73 @@
+.report-issue-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.report-issue-container h2 {
+  text-align: center;
+  color: #007BFF;
+  font-size: 26px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 10px;
+}
+
+.report-issue-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-issue-container input,
+.report-issue-container textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.report-issue-container input:focus,
+.report-issue-container textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.report-issue-container textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 250px;
+}
+
+.report-issue-container button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.report-issue-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .report-issue-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .report-issue-container h2 {
+    font-size: 22px;
+  }
+}
